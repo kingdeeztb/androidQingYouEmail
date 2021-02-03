@@ -1,0 +1,11 @@
+Android Studio启动时出现unable to access android sdk add-on list
+
+
+Android Studio First Run 检测 Android SDK 及更新，由于众所周知的原因，我们会「Unable to access Android SDK add-on list」，而且大家一般也已经提前配置好了 Android SDK，真正需要更新的时候手动去 SDK Manager 更新就好了。
+
+解决方案：
+
+在 Android Studio 安装目录 bin/idea.properties 文件最后追加一句
+
+disable.android.first.run=true
+参考：https://www.cnblogs.com/rancvl/p/6081791.html
